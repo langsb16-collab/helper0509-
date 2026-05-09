@@ -5,11 +5,8 @@ import { cors } from 'hono/cors'
 const app = new Hono()
 
 app.use('*', cors())
-
-// ── 정적 파일 서빙 (public/static/*) ─────────────
 app.use('/static/*', serveStatic({ root: './' }))
 
-// ── 메인 SPA HTML ────────────────────────────────
 const INDEX_HTML = `<!DOCTYPE html>
 <html lang="ko" data-theme="day">
 <head>
@@ -177,16 +174,16 @@ const INDEX_HTML = `<!DOCTYPE html>
   </section>
 
   <!-- Quick Menu + Notice -->
-  <section style="background:var(--bg);padding:40px 0">
+  <section style="background:var(--section-bg);padding:40px 0">
     <div class="container">
-      <div style="display:grid;grid-template-columns:1fr 340px;gap:24px;align-items:start">
+      <div class="quick-notice-outer" style="display:grid;grid-template-columns:1fr 380px;gap:24px;align-items:start">
 
         <!-- Quick Menu Grid -->
         <div>
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
             <h2 style="font-size:1.25rem" data-i18n="home.quickMenu">빠른 메뉴</h2>
           </div>
-          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
+          <div class="quick-menu-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
             <!-- 통역 -->
             <button onclick="showPage('interpreter')" style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px 16px;display:flex;flex-direction:column;align-items:center;gap:10px;cursor:pointer;transition:all 0.3s;text-align:center" onmouseover="this.style.borderColor='var(--secondary)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform=''">
               <div style="width:48px;height:48px;border-radius:14px;background:rgba(20,184,166,0.1);display:flex;align-items:center;justify-content:center;font-size:22px">🌐</div>
@@ -1120,45 +1117,75 @@ document.addEventListener('DOMContentLoaded', () => {
 
 app.get('/', (c) => c.html(INDEX_HTML))
 
-// ── Health Check ────────────────────────────────
 app.get('/health', (c) => c.json({ status: 'ok', service: 'CareTalk', version: '1.0.0' }))
 
-// ── API: 번역 프록시 (CORS 우회용) ───────────────
+// MyMemory 번역 API 프록시
 app.get('/api/translate', async (c) => {
-  const text = c.req.query('q') || ''
-  const from = c.req.query('from') || 'en'
-  const to   = c.req.query('to')   || 'ko'
-  if (!text) return c.json({ error: 'q is required' }, 400)
+  const q = c.req.query('q') || ''
+  const langpair = c.req.query('langpair') || 'ko|en'
   try {
-    const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${from}|${to}`
-    const res  = await fetch(url)
-    const data = await res.json() as { responseData: { translatedText: string } }
-    return c.json({ result: data?.responseData?.translatedText || text })
-  } catch {
-    return c.json({ result: text, error: 'translation failed' }, 200)
+    const url = 'https://api.mymemory.translated.net/get?q=' + encodeURIComponent(q) + '&langpair=' + langpair
+    const res = await fetch(url)
+    const data = await res.json() as any
+    return c.json(data)
+  } catch (e) {
+    return c.json({ error: 'Translation failed' }, 500)
   }
 })
 
-// ── API: 커뮤니티 게시물 (메모리 캐시) ───────────
-const memPosts: Record<string, unknown>[] = []
+// 게시물 저장소 (메모리 캐시)
+interface Post {
+  id: string
+  type: string
+  title: string
+  content: string
+  author: string
+  lang: string
+  createdAt: string
+  views: number
+  likes: number
+}
+
+const posts: Post[] = [
+  { id: '1', type: 'offer', title: '베트남어 전문 간병인 구직 - 5년 경력', content: '안녕하세요. 호치민 출신으로 한국에 온 지 3년 됐습니다. 노인 간병 5년 경력 있습니다.', author: '응우옌', lang: 'vi', createdAt: '2025-05-09', views: 234, likes: 12 },
+  { id: '2', type: 'request', title: '중국어 가능한 간병인 구합니다 - 서울 강남', content: '80대 어르신 간병 도움 필요합니다. 중국어 소통 가능하신 분 연락 주세요.', author: '김보호자', lang: 'ko', createdAt: '2025-05-09', views: 189, likes: 8 },
+  { id: '3', type: 'market', title: '전동 휠체어 판매 - 1년 사용, 상태 양호', content: '어머니 퇴원 후 사용하지 않는 전동 휠체어 판매합니다. 상태 매우 좋습니다.', author: '이판매자', lang: 'ko', createdAt: '2025-05-08', views: 312, likes: 5 },
+  { id: '4', type: 'offer', title: '몽골어·한국어 간병인 구직 - 인천 거주', content: '몽골 출신 간병인입니다. 한국어 능통하며 의료 보조 경험이 있습니다.', author: '바트 어르', lang: 'mn', createdAt: '2025-05-08', views: 156, likes: 9 },
+  { id: '5', type: 'request', title: '우즈베크어 통역 가능 간병인 부산 구인', content: '부산 소재 병원에서 우즈베크어 가능한 간병인을 찾습니다.', author: '부산병원', lang: 'ko', createdAt: '2025-05-07', views: 98, likes: 3 },
+  { id: '6', type: 'market', title: '병원용 이동식 변기 + 목욕 의자 세트 판매', content: '퇴원 후 불필요해진 용품 일괄 정리합니다. 직거래 선호.', author: '간병가족', lang: 'ko', createdAt: '2025-05-07', views: 203, likes: 7 }
+]
 
 app.get('/api/posts', (c) => {
-  const type     = c.req.query('type')
-  const filtered = type ? memPosts.filter(p => p.type === type) : memPosts
-  return c.json({ posts: filtered })
+  const type = c.req.query('type')
+  const lang = c.req.query('lang')
+  let filtered = posts
+  if (type && type !== 'all') filtered = filtered.filter(p => p.type === type)
+  if (lang && lang !== 'all') filtered = filtered.filter(p => p.lang === lang)
+  return c.json({ posts: filtered, total: filtered.length })
 })
 
 app.post('/api/posts', async (c) => {
-  const body = await c.req.json() as Record<string, unknown>
-  const post = { ...body, id: Date.now(), createdAt: new Date().toISOString() }
-  memPosts.unshift(post)
-  return c.json({ success: true, post })
+  const body = await c.req.json() as Partial<Post>
+  const newPost: Post = {
+    id: Date.now().toString(),
+    type: body.type || 'offer',
+    title: body.title || '',
+    content: body.content || '',
+    author: body.author || '익명',
+    lang: body.lang || 'ko',
+    createdAt: new Date().toISOString().split('T')[0],
+    views: 0,
+    likes: 0
+  }
+  posts.unshift(newPost)
+  return c.json({ success: true, post: newPost }, 201)
 })
 
 app.delete('/api/posts/:id', (c) => {
-  const id  = Number(c.req.param('id'))
-  const idx = memPosts.findIndex(p => p.id === id)
-  if (idx >= 0) memPosts.splice(idx, 1)
+  const id = c.req.param('id')
+  const idx = posts.findIndex(p => p.id === id)
+  if (idx === -1) return c.json({ error: 'Not found' }, 404)
+  posts.splice(idx, 1)
   return c.json({ success: true })
 })
 

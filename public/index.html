@@ -165,16 +165,16 @@
   </section>
 
   <!-- Quick Menu + Notice -->
-  <section style="background:var(--bg);padding:40px 0">
+  <section style="background:var(--section-bg);padding:40px 0">
     <div class="container">
-      <div style="display:grid;grid-template-columns:1fr 340px;gap:24px;align-items:start">
+      <div class="quick-notice-outer" style="display:grid;grid-template-columns:1fr 380px;gap:24px;align-items:start">
 
         <!-- Quick Menu Grid -->
         <div>
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
             <h2 style="font-size:1.25rem" data-i18n="home.quickMenu">빠른 메뉴</h2>
           </div>
-          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
+          <div class="quick-menu-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
             <!-- 통역 -->
             <button onclick="showPage('interpreter')" style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px 16px;display:flex;flex-direction:column;align-items:center;gap:10px;cursor:pointer;transition:all 0.3s;text-align:center" onmouseover="this.style.borderColor='var(--secondary)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform=''">
               <div style="width:48px;height:48px;border-radius:14px;background:rgba(20,184,166,0.1);display:flex;align-items:center;justify-content:center;font-size:22px">🌐</div>
