@@ -180,96 +180,96 @@ const INDEX_HTML = `<!DOCTYPE html>
 
         <!-- Quick Menu Grid -->
         <div>
-          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
-            <h2 style="font-size:1.25rem" data-i18n="home.quickMenu">빠른 메뉴</h2>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:22px">
+            <h2 style="font-size:1.5rem;font-weight:800" data-i18n="home.quickMenu">빠른 메뉴</h2>
           </div>
-          <div class="quick-menu-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
+          <div class="quick-menu-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
             <!-- 통역 -->
-            <button onclick="showPage('interpreter')" style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px 16px;display:flex;flex-direction:column;align-items:center;gap:10px;cursor:pointer;transition:all 0.3s;text-align:center" onmouseover="this.style.borderColor='var(--secondary)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform=''">
-              <div style="width:48px;height:48px;border-radius:14px;background:rgba(20,184,166,0.1);display:flex;align-items:center;justify-content:center;font-size:22px">🌐</div>
-              <span style="font-size:0.875rem;font-weight:700;color:var(--text)" data-i18n="nav.interpreter">통역</span>
-              <span style="font-size:0.75rem;color:var(--text-muted)">19개 언어</span>
+            <button onclick="showPage('interpreter')" style="background:var(--card);border:1px solid var(--border);border-radius:22px;padding:28px 16px;display:flex;flex-direction:column;align-items:center;gap:12px;cursor:pointer;transition:all 0.3s;text-align:center;min-height:160px" onmouseover="this.style.borderColor='var(--secondary)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform=''">
+              <div style="width:68px;height:68px;border-radius:18px;background:rgba(20,184,166,0.1);display:flex;align-items:center;justify-content:center;font-size:32px">🌐</div>
+              <span style="font-size:1.15rem;font-weight:700;color:var(--text)" data-i18n="nav.interpreter">통역</span>
+              <span style="font-size:0.9rem;color:var(--text-muted)">19개 언어</span>
             </button>
             <!-- 간병일지 -->
-            <button onclick="showPage('carelog')" style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px 16px;display:flex;flex-direction:column;align-items:center;gap:10px;cursor:pointer;transition:all 0.3s;text-align:center" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform=''">
-              <div style="width:48px;height:48px;border-radius:14px;background:rgba(255,107,0,0.1);display:flex;align-items:center;justify-content:center;font-size:22px">📋</div>
-              <span style="font-size:0.875rem;font-weight:700;color:var(--text)" data-i18n="nav.careLog">간병일지</span>
-              <span style="font-size:0.75rem;color:var(--text-muted)">음성→텍스트</span>
+            <button onclick="showPage('carelog')" style="background:var(--card);border:1px solid var(--border);border-radius:22px;padding:28px 16px;display:flex;flex-direction:column;align-items:center;gap:12px;cursor:pointer;transition:all 0.3s;text-align:center;min-height:160px" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform=''">
+              <div style="width:68px;height:68px;border-radius:18px;background:rgba(255,107,0,0.1);display:flex;align-items:center;justify-content:center;font-size:32px">📋</div>
+              <span style="font-size:1.15rem;font-weight:700;color:var(--text)" data-i18n="nav.careLog">간병일지</span>
+              <span style="font-size:0.9rem;color:var(--text-muted)">음성→텍스트</span>
             </button>
             <!-- OCR -->
-            <button onclick="showPage('ocr')" style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px 16px;display:flex;flex-direction:column;align-items:center;gap:10px;cursor:pointer;transition:all 0.3s;text-align:center" onmouseover="this.style.borderColor='#6366F1';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform=''">
-              <div style="width:48px;height:48px;border-radius:14px;background:rgba(99,102,241,0.1);display:flex;align-items:center;justify-content:center;font-size:22px">📷</div>
-              <span style="font-size:0.875rem;font-weight:700;color:var(--text)" data-i18n="nav.ocr">사진분석</span>
-              <span style="font-size:0.75rem;color:var(--text-muted)">OCR 분석</span>
+            <button onclick="showPage('ocr')" style="background:var(--card);border:1px solid var(--border);border-radius:22px;padding:28px 16px;display:flex;flex-direction:column;align-items:center;gap:12px;cursor:pointer;transition:all 0.3s;text-align:center;min-height:160px" onmouseover="this.style.borderColor='#6366F1';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform=''">
+              <div style="width:68px;height:68px;border-radius:18px;background:rgba(99,102,241,0.1);display:flex;align-items:center;justify-content:center;font-size:32px">📷</div>
+              <span style="font-size:1.15rem;font-weight:700;color:var(--text)" data-i18n="nav.ocr">사진분석</span>
+              <span style="font-size:0.9rem;color:var(--text-muted)">OCR 분석</span>
             </button>
             <!-- 간병인 해요 -->
-            <button onclick="showPage('community');setTimeout(()=>setCommunityTab('offer'),100)" style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px 16px;display:flex;flex-direction:column;align-items:center;gap:10px;cursor:pointer;transition:all 0.3s;text-align:center" onmouseover="this.style.borderColor='var(--secondary)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform=''">
-              <div style="width:48px;height:48px;border-radius:14px;background:rgba(20,184,166,0.1);display:flex;align-items:center;justify-content:center;font-size:22px">👩‍⚕️</div>
-              <span style="font-size:0.875rem;font-weight:700;color:var(--text)" data-i18n="community.caregiverOffer">간병인 해요</span>
-              <span style="font-size:0.75rem;color:var(--text-muted)">구직 게시판</span>
+            <button onclick="showPage('community');setTimeout(()=>setCommunityTab('offer'),100)" style="background:var(--card);border:1px solid var(--border);border-radius:22px;padding:28px 16px;display:flex;flex-direction:column;align-items:center;gap:12px;cursor:pointer;transition:all 0.3s;text-align:center;min-height:160px" onmouseover="this.style.borderColor='var(--secondary)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform=''">
+              <div style="width:68px;height:68px;border-radius:18px;background:rgba(20,184,166,0.1);display:flex;align-items:center;justify-content:center;font-size:32px">👩‍⚕️</div>
+              <span style="font-size:1.15rem;font-weight:700;color:var(--text)" data-i18n="community.caregiverOffer">간병인 해요</span>
+              <span style="font-size:0.9rem;color:var(--text-muted)">구직 게시판</span>
             </button>
             <!-- 간병인 찾아요 -->
-            <button onclick="showPage('community');setTimeout(()=>setCommunityTab('request'),100)" style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px 16px;display:flex;flex-direction:column;align-items:center;gap:10px;cursor:pointer;transition:all 0.3s;text-align:center" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform=''">
-              <div style="width:48px;height:48px;border-radius:14px;background:rgba(255,107,0,0.1);display:flex;align-items:center;justify-content:center;font-size:22px">🔍</div>
-              <span style="font-size:0.875rem;font-weight:700;color:var(--text)" data-i18n="community.caregiverRequest">간병인 찾아요</span>
-              <span style="font-size:0.75rem;color:var(--text-muted)">구인 게시판</span>
+            <button onclick="showPage('community');setTimeout(()=>setCommunityTab('request'),100)" style="background:var(--card);border:1px solid var(--border);border-radius:22px;padding:28px 16px;display:flex;flex-direction:column;align-items:center;gap:12px;cursor:pointer;transition:all 0.3s;text-align:center;min-height:160px" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform=''">
+              <div style="width:68px;height:68px;border-radius:18px;background:rgba(255,107,0,0.1);display:flex;align-items:center;justify-content:center;font-size:32px">🔍</div>
+              <span style="font-size:1.15rem;font-weight:700;color:var(--text)" data-i18n="community.caregiverRequest">간병인 찾아요</span>
+              <span style="font-size:0.9rem;color:var(--text-muted)">구인 게시판</span>
             </button>
             <!-- 중고마켓 -->
-            <button onclick="showPage('community');setTimeout(()=>setCommunityTab('market'),100)" style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px 16px;display:flex;flex-direction:column;align-items:center;gap:10px;cursor:pointer;transition:all 0.3s;text-align:center" onmouseover="this.style.borderColor='var(--warning)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform=''">
-              <div style="width:48px;height:48px;border-radius:14px;background:rgba(245,158,11,0.1);display:flex;align-items:center;justify-content:center;font-size:22px">🛒</div>
-              <span style="font-size:0.875rem;font-weight:700;color:var(--text)" data-i18n="community.market">중고마켓</span>
-              <span style="font-size:0.75rem;color:var(--text-muted)">케어용품</span>
+            <button onclick="showPage('community');setTimeout(()=>setCommunityTab('market'),100)" style="background:var(--card);border:1px solid var(--border);border-radius:22px;padding:28px 16px;display:flex;flex-direction:column;align-items:center;gap:12px;cursor:pointer;transition:all 0.3s;text-align:center;min-height:160px" onmouseover="this.style.borderColor='var(--warning)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform=''">
+              <div style="width:68px;height:68px;border-radius:18px;background:rgba(245,158,11,0.1);display:flex;align-items:center;justify-content:center;font-size:32px">🛒</div>
+              <span style="font-size:1.15rem;font-weight:700;color:var(--text)" data-i18n="community.market">중고마켓</span>
+              <span style="font-size:0.9rem;color:var(--text-muted)">케어용품</span>
             </button>
           </div>
         </div>
 
         <!-- Notice Panel -->
         <div>
-          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
-            <h2 style="font-size:1.1rem" data-i18n="home.notice">공지사항</h2>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
+            <h2 style="font-size:1.4rem;font-weight:800" data-i18n="home.notice">공지사항</h2>
           </div>
           <div class="card">
-            <div class="card-body" style="padding:16px">
-              <div style="display:flex;flex-direction:column;gap:12px">
-                <div style="padding:12px;background:var(--bg-secondary);border-radius:10px;border-left:3px solid var(--secondary)">
-                  <div style="font-size:0.8rem;color:var(--text-muted);margin-bottom:4px">2025.05.09</div>
-                  <div style="font-size:0.875rem;font-weight:600;color:var(--text)">🎉 CareTalk 서비스 정식 오픈!</div>
-                  <div style="font-size:0.8rem;color:var(--text-secondary);margin-top:4px">19개 언어 통역, 간병일지, OCR 분석 기능을 무료로 이용하세요.</div>
+            <div class="card-body" style="padding:20px">
+              <div style="display:flex;flex-direction:column;gap:14px">
+                <div style="padding:16px;background:var(--bg-secondary);border-radius:12px;border-left:4px solid var(--secondary)">
+                  <div style="font-size:0.9rem;color:var(--text-muted);margin-bottom:6px">2025.05.09</div>
+                  <div style="font-size:1.08rem;font-weight:700;color:var(--text);line-height:1.5">🎉 CareTalk 서비스 정식 오픈!</div>
+                  <div style="font-size:0.95rem;color:var(--text-secondary);margin-top:6px;line-height:1.7">19개 언어 통역, 간병일지, OCR 분석 기능을 무료로 이용하세요.</div>
                 </div>
-                <div style="padding:12px;background:var(--bg-secondary);border-radius:10px;border-left:3px solid var(--accent)">
-                  <div style="font-size:0.8rem;color:var(--text-muted);margin-bottom:4px">2025.05.08</div>
-                  <div style="font-size:0.875rem;font-weight:600;color:var(--text)">📢 간병인 커뮤니티 오픈</div>
-                  <div style="font-size:0.8rem;color:var(--text-secondary);margin-top:4px">회원가입 없이 무료로 구인·구직 게시물을 등록하세요.</div>
+                <div style="padding:16px;background:var(--bg-secondary);border-radius:12px;border-left:4px solid var(--accent)">
+                  <div style="font-size:0.9rem;color:var(--text-muted);margin-bottom:6px">2025.05.08</div>
+                  <div style="font-size:1.08rem;font-weight:700;color:var(--text);line-height:1.5">📢 간병인 커뮤니티 오픈</div>
+                  <div style="font-size:0.95rem;color:var(--text-secondary);margin-top:6px;line-height:1.7">회원가입 없이 무료로 구인·구직 게시물을 등록하세요.</div>
                 </div>
-                <div style="padding:12px;background:var(--bg-secondary);border-radius:10px;border-left:3px solid var(--warning)">
-                  <div style="font-size:0.8rem;color:var(--text-muted);margin-bottom:4px">2025.05.07</div>
-                  <div style="font-size:0.875rem;font-weight:600;color:var(--text)">⚠️ 이용 안내</div>
-                  <div style="font-size:0.8rem;color:var(--text-secondary);margin-top:4px">본 플랫폼은 보조 서비스입니다. 치료 판단은 반드시 의료진에게 확인하세요.</div>
+                <div style="padding:16px;background:var(--bg-secondary);border-radius:12px;border-left:4px solid var(--warning)">
+                  <div style="font-size:0.9rem;color:var(--text-muted);margin-bottom:6px">2025.05.07</div>
+                  <div style="font-size:1.08rem;font-weight:700;color:var(--text);line-height:1.5">⚠️ 이용 안내</div>
+                  <div style="font-size:0.95rem;color:var(--text-secondary);margin-top:6px;line-height:1.7">본 플랫폼은 보조 서비스입니다. 치료 판단은 반드시 의료진에게 확인하세요.</div>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Stats Card -->
-          <div class="card" style="margin-top:14px">
-            <div class="card-body" style="padding:16px">
-              <div style="font-size:0.875rem;font-weight:700;color:var(--text);margin-bottom:12px" data-i18n="home.statsTitle">플랫폼 현황</div>
-              <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
-                <div style="text-align:center;padding:10px;background:var(--bg-secondary);border-radius:10px">
-                  <div style="font-size:1.4rem;font-weight:800;color:var(--secondary)">19</div>
-                  <div style="font-size:0.72rem;color:var(--text-muted)" data-i18n="home.stat1">지원 언어</div>
+          <div class="card" style="margin-top:16px">
+            <div class="card-body" style="padding:20px">
+              <div style="font-size:1.05rem;font-weight:800;color:var(--text);margin-bottom:14px" data-i18n="home.statsTitle">플랫폼 현황</div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+                <div style="text-align:center;padding:14px 10px;background:var(--bg-secondary);border-radius:12px">
+                  <div style="font-size:1.8rem;font-weight:800;color:var(--secondary)">19</div>
+                  <div style="font-size:0.88rem;color:var(--text-muted);margin-top:4px" data-i18n="home.stat1">지원 언어</div>
                 </div>
-                <div style="text-align:center;padding:10px;background:var(--bg-secondary);border-radius:10px">
-                  <div style="font-size:1.4rem;font-weight:800;color:var(--accent)">2.4K</div>
-                  <div style="font-size:0.72rem;color:var(--text-muted)" data-i18n="home.stat2">등록 간병인</div>
+                <div style="text-align:center;padding:14px 10px;background:var(--bg-secondary);border-radius:12px">
+                  <div style="font-size:1.8rem;font-weight:800;color:var(--accent)">2.4K</div>
+                  <div style="font-size:0.88rem;color:var(--text-muted);margin-top:4px" data-i18n="home.stat2">등록 간병인</div>
                 </div>
-                <div style="text-align:center;padding:10px;background:var(--bg-secondary);border-radius:10px">
-                  <div style="font-size:1.4rem;font-weight:800;color:var(--primary)">58K</div>
-                  <div style="font-size:0.72rem;color:var(--text-muted)" data-i18n="home.stat3">누적 통역</div>
+                <div style="text-align:center;padding:14px 10px;background:var(--bg-secondary);border-radius:12px">
+                  <div style="font-size:1.8rem;font-weight:800;color:var(--primary)">58K</div>
+                  <div style="font-size:0.88rem;color:var(--text-muted);margin-top:4px" data-i18n="home.stat3">누적 통역</div>
                 </div>
-                <div style="text-align:center;padding:10px;background:var(--bg-secondary);border-radius:10px">
-                  <div style="font-size:1.4rem;font-weight:800;color:var(--success)">4.9★</div>
-                  <div style="font-size:0.72rem;color:var(--text-muted)" data-i18n="home.stat4">만족도</div>
+                <div style="text-align:center;padding:14px 10px;background:var(--bg-secondary);border-radius:12px">
+                  <div style="font-size:1.8rem;font-weight:800;color:var(--success)">4.9★</div>
+                  <div style="font-size:0.88rem;color:var(--text-muted);margin-top:4px" data-i18n="home.stat4">만족도</div>
                 </div>
               </div>
             </div>
@@ -282,8 +282,8 @@ const INDEX_HTML = `<!DOCTYPE html>
   <!-- Latest Posts Preview -->
   <section style="background:var(--bg-secondary);padding:40px 0">
     <div class="container">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
-        <h2 style="font-size:1.25rem" data-i18n="home.latestPosts">최신 게시물</h2>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:22px">
+        <h2 style="font-size:1.5rem;font-weight:800" data-i18n="home.latestPosts">최신 게시물</h2>
         <button class="btn btn-outline btn-sm" onclick="showPage('community')">전체 보기 →</button>
       </div>
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px" id="home-posts-preview"></div>
