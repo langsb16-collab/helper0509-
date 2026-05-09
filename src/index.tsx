@@ -109,6 +109,51 @@ const INDEX_HTML = `<!DOCTYPE html>
 
   <!-- Hero -->
   <section class="hero">
+
+    <!-- ── Partner Link Buttons (Hero 상단 외부링크 8개) ── -->
+    <div class="partner-link-wrap">
+      <a href="https://feezone.my" target="_blank" rel="noopener noreferrer"
+         class="partner-link-button"
+         onclick="this.classList.add('active-click');setTimeout(()=>this.classList.remove('active-click'),450)">
+        <span>역사인물</span><strong>심리상담</strong>
+      </a>
+      <a href="https://p2p.io.kr" target="_blank" rel="noopener noreferrer"
+         class="partner-link-button"
+         onclick="this.classList.add('active-click');setTimeout(()=>this.classList.remove('active-click'),450)">
+        <span>AI</span><strong>닥터</strong>
+      </a>
+      <a href="https://feezone.me" target="_blank" rel="noopener noreferrer"
+         class="partner-link-button"
+         onclick="this.classList.add('active-click');setTimeout(()=>this.classList.remove('active-click'),450)">
+        <span>타로</span><strong>상담</strong>
+      </a>
+      <a href="https://tourit.ceo" target="_blank" rel="noopener noreferrer"
+         class="partner-link-button"
+         onclick="this.classList.add('active-click');setTimeout(()=>this.classList.remove('active-click'),450)">
+        <span>무료</span><strong>법률</strong>
+      </a>
+      <a href="https://vipself.art" target="_blank" rel="noopener noreferrer"
+         class="partner-link-button"
+         onclick="this.classList.add('active-click');setTimeout(()=>this.classList.remove('active-click'),450)">
+        <span>오늘</span><strong>뭐먹지</strong>
+      </a>
+      <a href="https://inkorea.my" target="_blank" rel="noopener noreferrer"
+         class="partner-link-button"
+         onclick="this.classList.add('active-click');setTimeout(()=>this.classList.remove('active-click'),450)">
+        <span>전국</span><strong>축제</strong>
+      </a>
+      <a href="https://puke365.net" target="_blank" rel="noopener noreferrer"
+         class="partner-link-button"
+         onclick="this.classList.add('active-click');setTimeout(()=>this.classList.remove('active-click'),450)">
+        <span>보이스</span><strong>피싱예방</strong>
+      </a>
+      <a href="https://vipself.art" target="_blank" rel="noopener noreferrer"
+         class="partner-link-button"
+         onclick="this.classList.add('active-click');setTimeout(()=>this.classList.remove('active-click'),450)">
+        <span>나도 한다</span><strong>국제 연애</strong>
+      </a>
+    </div>
+
     <div class="hero-content">
       <div class="hero-text">
         <div class="hero-badge">
@@ -1119,7 +1164,6 @@ app.get('/', (c) => c.html(INDEX_HTML))
 
 app.get('/health', (c) => c.json({ status: 'ok', service: 'CareTalk', version: '1.0.0' }))
 
-// MyMemory 번역 API 프록시
 app.get('/api/translate', async (c) => {
   const q = c.req.query('q') || ''
   const langpair = c.req.query('langpair') || 'ko|en'
@@ -1133,7 +1177,6 @@ app.get('/api/translate', async (c) => {
   }
 })
 
-// 게시물 저장소 (메모리 캐시)
 interface Post {
   id: string
   type: string
