@@ -16,7 +16,7 @@ const INDEX_HTML = `<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta name="description" content="CareTalk - 간병 전문 통역 플랫폼. 외국인 간병인과 환자·보호자·의료진을 실시간 AI 통역으로 연결합니다.">
-  <title>CareTalk - 글로벌 간병 전문 통역 플랫폼</title>
+  <title>간병 전문 통역 플랫폼</title>
   <link rel="stylesheet" href="/static/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
