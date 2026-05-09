@@ -1,0 +1,326 @@
+{
+  "app": {
+    "name": "CareTalk",
+    "headline": "全球护理专业翻译平台",
+    "slogan": "用实时AI翻译连接患者、家属、护工和医护人员。"
+  },
+  "nav": {
+    "home": "首页",
+    "interpreter": "翻译",
+    "careLog": "护理日志",
+    "ocr": "照片分析",
+    "community": "社区",
+    "chat": "咨询"
+  },
+  "language": {
+    "select": "语言选择"
+  },
+  "theme": {
+    "day": "☀️ 日间",
+    "night": "🌙 夜间"
+  },
+  "buttons": {
+    "start": "开始",
+    "translate": "翻译",
+    "record": "30秒录音",
+    "uploadPhoto": "上传照片",
+    "sendKakao": "KakaoTalk分享",
+    "sendTelegram": "Telegram分享",
+    "registerPost": "发布",
+    "editPost": "编辑",
+    "chat": "聊天",
+    "map": "地图",
+    "copy": "复制",
+    "save": "保存",
+    "close": "关闭",
+    "submit": "提交",
+    "cancel": "取消",
+    "delete": "删除",
+    "send": "发送",
+    "analyze": "分析",
+    "savePdf": "保存PDF",
+    "voiceInput": "语音输入"
+  },
+  "community": {
+    "title": "社区",
+    "caregiverOffer": "我是护工",
+    "caregiverRequest": "寻找护工",
+    "market": "二手市场",
+    "all": "全部",
+    "write": "发帖",
+    "noPost": "暂无帖子。",
+    "loginFree": "无需注册免费发布"
+  },
+  "form": {
+    "title": "标题",
+    "content": "内容",
+    "contact": "联系方式",
+    "region": "地区",
+    "certificate": "证书",
+    "pay": "薪资",
+    "condition": "工作条件",
+    "restDay": "休息日",
+    "patientRegion": "患者地区",
+    "photo": "上传照片",
+    "submit": "提交",
+    "patientCondition": "患者状况",
+    "requirement": "要求",
+    "hopePay": "期望薪资",
+    "neededLang": "所需语言",
+    "stayIn": "住家护理",
+    "hospital": "医院或地区",
+    "price": "价格",
+    "tradeType": "交易方式",
+    "category": "类别",
+    "itemCondition": "状态",
+    "availableLang": "语言能力",
+    "career": "经验",
+    "gender": "性别",
+    "nightShift": "日夜班",
+    "stayInCare": "可住家",
+    "availableRegion": "工作地区",
+    "placeholder": {
+      "title": "请输入标题",
+      "content": "请输入内容",
+      "contact": "请输入联系方式",
+      "region": "请输入地区"
+    }
+  },
+  "interpreter": {
+    "title": "护理翻译",
+    "subtitle": "护工与患者之间的实时翻译",
+    "fromLang": "源语言",
+    "toLang": "目标语言",
+    "inputPlaceholder": "输入文字或使用语音",
+    "result": "翻译结果",
+    "history": "历史记录",
+    "caregiverMode": "护工→韩语",
+    "patientMode": "患者→护工语言",
+    "voiceGuide": "按下按钮后说话",
+    "copied": "已复制"
+  },
+  "careLog": {
+    "title": "护理日志",
+    "subtitle": "记录每日护理并分享给家属和医护人员",
+    "patientStatus": "患者状态",
+    "meal": "饮食",
+    "medication": "用药",
+    "sleep": "睡眠",
+    "toilet": "排便",
+    "pain": "疼痛",
+    "special": "特殊情况",
+    "doctorNote": "医护人员留言",
+    "guardianNote": "家属留言",
+    "recordGuide": "30秒语音录音自动转文字",
+    "sendGuide": "通过KakaoTalk或Telegram发送",
+    "good": "良好",
+    "normal": "正常",
+    "bad": "不佳",
+    "yes": "是",
+    "no": "否",
+    "date": "日期",
+    "saved": "已保存"
+  },
+  "ocr": {
+    "title": "照片分析",
+    "subtitle": "分析输液袋、药品和处方签为文字",
+    "guide": "仅供参考的文字分析服务，非医疗诊断。",
+    "warning": "⚠️ 需要医护人员确认",
+    "warningDetail": "检测到危险词汇，请咨询医护人员。",
+    "uploadGuide": "上传照片或拍照",
+    "analyzing": "分析中...",
+    "result": "分析结果",
+    "summary": "韩语摘要",
+    "translation": "翻译",
+    "targets": {
+      "iv": "输液袋",
+      "medicine": "药品包装",
+      "prescription": "处方签",
+      "guide": "用药说明",
+      "hospitalInfo": "医院信息",
+      "medRecord": "病历",
+      "labResult": "检查结果",
+      "careMemo": "护理备忘",
+      "receipt": "收据",
+      "caution": "注意事项"
+    }
+  },
+  "chat": {
+    "adminChat": "管理员咨询",
+    "placeholder": "输入消息...",
+    "voiceCall": "语音通话",
+    "videoCall": "视频通话",
+    "sendPhoto": "发送照片",
+    "record30": "30秒语音",
+    "autoTranslate": "自动翻译",
+    "online": "在线",
+    "offline": "离线",
+    "adminName": "CareTalk客服",
+    "welcome": "您好！我是CareTalk客服，有什么可以帮助您？",
+    "sending": "发送中...",
+    "read": "已读",
+    "unread": "未读"
+  },
+  "faq": {
+    "title": "常见问题",
+    "subtitle": "查看常见问题",
+    "items": [
+      {
+        "q": "这个平台提供什么服务？",
+        "a": "CareTalk是一个专业护理翻译、记录和传递平台，消除外国护工与患者、家属和医护人员之间的语言障碍。"
+      },
+      {
+        "q": "不注册也能使用吗？",
+        "a": "是的，包括社区发帖在内的大部分功能无需注册即可免费使用。"
+      },
+      {
+        "q": "护工和患者之间可以翻译吗？",
+        "a": "是的，我们实时将护工的外语翻译成韩语，将患者的韩语翻译成护工语言。"
+      },
+      {
+        "q": "支持哪些语言？",
+        "a": "支持19种语言，包括韩语、英语、中文、日语、法语、德语、俄语、越南语等。"
+      },
+      {
+        "q": "支持语音翻译吗？",
+        "a": "是的，按下麦克风按钮说话，语音会转换为文字并自动翻译。"
+      },
+      {
+        "q": "患者的话可以转换为护工语言吗？",
+        "a": "是的，选择'患者→护工语言'模式即可。"
+      },
+      {
+        "q": "护工的话可以转换为韩语吗？",
+        "a": "是的，选择'护工→韩语'模式即可。"
+      },
+      {
+        "q": "如何记录护理日志？",
+        "a": "在护理日志菜单中输入或语音录制患者状态、饮食、用药等信息。"
+      },
+      {
+        "q": "语音录音会转换为文字吗？",
+        "a": "是的，30秒语音录音会自动转换为文字。"
+      },
+      {
+        "q": "可以将护理日志发送给家属吗？",
+        "a": "是的，可以通过KakaoTalk、Telegram或PDF发送。"
+      },
+      {
+        "q": "支持KakaoTalk分享吗？",
+        "a": "是的，翻译结果、护理日志和OCR结果都可以通过KakaoTalk分享。"
+      },
+      {
+        "q": "支持Telegram分享吗？",
+        "a": "是的。"
+      },
+      {
+        "q": "可以分析处方签吗？",
+        "a": "是的，上传处方签照片可提取文字并用韩语摘要。"
+      },
+      {
+        "q": "可以上传药品照片吗？",
+        "a": "是的。"
+      },
+      {
+        "q": "可以分析输液袋照片吗？",
+        "a": "是的，分析输液标签提取成分和剂量信息。"
+      },
+      {
+        "q": "OCR结果可以翻译吗？",
+        "a": "是的，可以翻译并发送给家属或医护人员。"
+      },
+      {
+        "q": "可以发布护工招聘信息吗？",
+        "a": "是的，在'寻找护工'版块免费发布。"
+      },
+      {
+        "q": "护工可以发布求职信息吗？",
+        "a": "是的，在'我是护工'版块发布包含证书和经验的个人资料。"
+      },
+      {
+        "q": "可以编辑帖子吗？",
+        "a": "是的，可以随时编辑。"
+      },
+      {
+        "q": "支持照片上传吗？",
+        "a": "支持电脑上传、手机拍照和相册上传。"
+      },
+      {
+        "q": "手机上可以使用吗？",
+        "a": "是的，已针对手机优化。"
+      },
+      {
+        "q": "电脑上显示正常吗？",
+        "a": "是的，电脑使用宽屏Dense UI。"
+      },
+      {
+        "q": "有聊天功能吗？",
+        "a": "是的，每个帖子都有聊天按钮。"
+      },
+      {
+        "q": "可以咨询管理员吗？",
+        "a": "是的，点击左下角的咨询按钮即可。"
+      },
+      {
+        "q": "支持自动翻译聊天吗？",
+        "a": "是的，开启自动翻译后消息会自动翻译。"
+      },
+      {
+        "q": "有视频通话功能吗？",
+        "a": "是的。"
+      },
+      {
+        "q": "有语音通话功能吗？",
+        "a": "是的。"
+      },
+      {
+        "q": "有地图导航吗？",
+        "a": "是的，点击约图按钮查看OpenStreetMap。"
+      },
+      {
+        "q": "所有功能都免费吗？",
+        "a": "是的，完全免费。"
+      },
+      {
+        "q": "这是医疗诊断服务吗？",
+        "a": "不是。本平台不是医疗诊断服务，而是辅助护理、翻译、记录和传递的平台。OCR分析仅供参考，治疗决定必须由医生等医护人员确认。"
+      }
+    ]
+  },
+  "home": {
+    "heroTitle": "全球护理专业\n翻译平台",
+    "heroDesc": "用实时AI翻译连接\n患者、家属、护工和医护人员。",
+    "feature1Title": "实时翻译",
+    "feature1Desc": "19种语言双向翻译",
+    "feature2Title": "护理日志",
+    "feature2Desc": "语音转文字自动传递",
+    "feature3Title": "照片分析",
+    "feature3Desc": "处方签OCR文字提取",
+    "feature4Title": "社区",
+    "feature4Desc": "免费护工求职招聘板",
+    "statsTitle": "平台统计",
+    "stat1": "语言数",
+    "stat2": "护工数",
+    "stat3": "翻译次数",
+    "stat4": "满意度",
+    "notice": "公告",
+    "quickMenu": "快速菜单",
+    "latestPosts": "最新帖子"
+  },
+  "map": {
+    "title": "位置导航",
+    "placeholder": "请输入地址或地区",
+    "search": "搜索",
+    "openMap": "打开地图",
+    "noLocation": "无位置信息"
+  },
+  "errors": {
+    "required": "此项为必填项",
+    "uploadFail": "上传失败",
+    "networkError": "网络错误",
+    "micPermission": "需要麦克风权限",
+    "cameraPermission": "需要相机权限",
+    "fileTooLarge": "文件过大(最大10MB)",
+    "unsupportedFormat": "不支持的文件格式"
+  }
+}
