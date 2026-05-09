@@ -1,0 +1,326 @@
+{
+  "app": {
+    "name": "CareTalk",
+    "headline": "Plateforme mondiale de traduction pour soignants",
+    "slogan": "Connecter patients, aidants, soignants et personnel médical."
+  },
+  "nav": {
+    "home": "Accueil",
+    "interpreter": "Traduction",
+    "careLog": "Journal de soins",
+    "ocr": "Analyse photo",
+    "community": "Communauté",
+    "chat": "Consultation"
+  },
+  "language": {
+    "select": "Langue"
+  },
+  "theme": {
+    "day": "☀️ Jour",
+    "night": "🌙 Nuit"
+  },
+  "buttons": {
+    "start": "Start",
+    "translate": "Translate",
+    "record": "30s Record",
+    "uploadPhoto": "Upload Photo",
+    "sendKakao": "KakaoTalk",
+    "sendTelegram": "Telegram",
+    "registerPost": "Post",
+    "editPost": "Edit",
+    "chat": "Chat",
+    "map": "Map",
+    "copy": "Copy",
+    "save": "Save",
+    "close": "Close",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "send": "Send",
+    "analyze": "Analyze",
+    "savePdf": "Save PDF",
+    "voiceInput": "Voice"
+  },
+  "community": {
+    "title": "Communauté",
+    "caregiverOffer": "Caregiver Available",
+    "caregiverRequest": "Need Caregiver",
+    "market": "Used Market",
+    "all": "All",
+    "write": "Write",
+    "noPost": "No posts.",
+    "loginFree": "Free, no registration"
+  },
+  "form": {
+    "title": "Title",
+    "content": "Content",
+    "contact": "Contact",
+    "region": "Region",
+    "certificate": "Certificate",
+    "pay": "Pay",
+    "condition": "Conditions",
+    "restDay": "Rest Days",
+    "patientRegion": "Patient Region",
+    "photo": "Photo",
+    "submit": "Submit",
+    "patientCondition": "Patient Status",
+    "requirement": "Requirements",
+    "hopePay": "Desired Pay",
+    "neededLang": "Language",
+    "stayIn": "Live-in",
+    "hospital": "Hospital/Region",
+    "price": "Price",
+    "tradeType": "Trade",
+    "category": "Category",
+    "itemCondition": "Condition",
+    "availableLang": "Languages",
+    "career": "Experience",
+    "gender": "Gender",
+    "nightShift": "Shift",
+    "stayInCare": "Live-in OK",
+    "availableRegion": "Work Region",
+    "placeholder": {
+      "title": "Enter title",
+      "content": "Enter content",
+      "contact": "Enter contact",
+      "region": "Enter region"
+    }
+  },
+  "interpreter": {
+    "title": "Traduction",
+    "subtitle": "Real-time care translation",
+    "fromLang": "From",
+    "toLang": "To",
+    "inputPlaceholder": "Enter text or use voice",
+    "result": "Result",
+    "history": "History",
+    "caregiverMode": "Caregiver → KO",
+    "patientMode": "Patient → Caregiver",
+    "voiceGuide": "Press and speak",
+    "copied": "Copied!"
+  },
+  "careLog": {
+    "title": "Journal de soins",
+    "subtitle": "Record and share daily care",
+    "patientStatus": "Status",
+    "meal": "Meal",
+    "medication": "Medication",
+    "sleep": "Sleep",
+    "toilet": "Toilet",
+    "pain": "Pain",
+    "special": "Notes",
+    "doctorNote": "Doctor Note",
+    "guardianNote": "Guardian Note",
+    "recordGuide": "30s voice auto-converts to text",
+    "sendGuide": "Share via KakaoTalk or Telegram",
+    "good": "Good",
+    "normal": "Normal",
+    "bad": "Poor",
+    "yes": "Yes",
+    "no": "No",
+    "date": "Date",
+    "saved": "Saved"
+  },
+  "ocr": {
+    "title": "Analyse photo",
+    "subtitle": "Analyze photos to text",
+    "guide": "Reference text analysis. Not a medical diagnosis.",
+    "warning": "⚠️ Medical Review Required",
+    "warningDetail": "Dangerous terms detected. Consult medical staff.",
+    "uploadGuide": "Upload photo or take picture",
+    "analyzing": "Analyzing...",
+    "result": "Result",
+    "summary": "Summary",
+    "translation": "Translation",
+    "targets": {
+      "iv": "IV",
+      "medicine": "Medicine",
+      "prescription": "Prescription",
+      "guide": "Medication Guide",
+      "hospitalInfo": "Hospital Info",
+      "medRecord": "Medical Record",
+      "labResult": "Lab Result",
+      "careMemo": "Care Memo",
+      "receipt": "Receipt",
+      "caution": "Caution"
+    }
+  },
+  "chat": {
+    "adminChat": "Support Chat",
+    "placeholder": "Type message...",
+    "voiceCall": "Voice Call",
+    "videoCall": "Video Call",
+    "sendPhoto": "Send Photo",
+    "record30": "30s Voice",
+    "autoTranslate": "Auto Translate",
+    "online": "Online",
+    "offline": "Offline",
+    "adminName": "CareTalk Support",
+    "welcome": "Hello! CareTalk support here. How can I help?",
+    "sending": "Sending...",
+    "read": "Read",
+    "unread": "Unread"
+  },
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "What is this platform?",
+        "a": "CareTalk bridges language gaps in caregiving between foreign caregivers and patients/families/medical staff."
+      },
+      {
+        "q": "No registration needed?",
+        "a": "Yes, free to use without signup."
+      },
+      {
+        "q": "Can caregivers and patients communicate?",
+        "a": "Yes, real-time bidirectional translation."
+      },
+      {
+        "q": "What languages?",
+        "a": "19 languages supported."
+      },
+      {
+        "q": "Voice translation?",
+        "a": "Yes, press mic and speak."
+      },
+      {
+        "q": "Patient to caregiver translation?",
+        "a": "Yes, select Patient → Caregiver mode."
+      },
+      {
+        "q": "Caregiver to Korean?",
+        "a": "Yes, select Caregiver → Korean mode."
+      },
+      {
+        "q": "How to write care log?",
+        "a": "Enter or voice-record in the Care Log menu."
+      },
+      {
+        "q": "Voice to text?",
+        "a": "Yes, 30s recordings auto-convert."
+      },
+      {
+        "q": "Send log to guardian?",
+        "a": "Yes, via KakaoTalk, Telegram or PDF."
+      },
+      {
+        "q": "KakaoTalk sharing?",
+        "a": "Yes."
+      },
+      {
+        "q": "Telegram sharing?",
+        "a": "Yes."
+      },
+      {
+        "q": "Prescription analysis?",
+        "a": "Yes, upload to extract and summarize."
+      },
+      {
+        "q": "Medicine photo upload?",
+        "a": "Yes."
+      },
+      {
+        "q": "IV bag analysis?",
+        "a": "Yes."
+      },
+      {
+        "q": "Translate OCR results?",
+        "a": "Yes."
+      },
+      {
+        "q": "Post caregiver jobs?",
+        "a": "Yes, free without registration."
+      },
+      {
+        "q": "Caregiver profiles?",
+        "a": "Yes, in caregiver board."
+      },
+      {
+        "q": "Edit posts?",
+        "a": "Yes, anytime."
+      },
+      {
+        "q": "Photo upload?",
+        "a": "PC, camera, gallery supported."
+      },
+      {
+        "q": "Mobile friendly?",
+        "a": "Yes, optimized UI."
+      },
+      {
+        "q": "PC full screen?",
+        "a": "Yes, wide Dense UI."
+      },
+      {
+        "q": "Chat feature?",
+        "a": "Yes, per post."
+      },
+      {
+        "q": "Admin consultation?",
+        "a": "Yes, bottom left button."
+      },
+      {
+        "q": "Auto-translate chat?",
+        "a": "Yes."
+      },
+      {
+        "q": "Video call?",
+        "a": "Yes."
+      },
+      {
+        "q": "Voice call?",
+        "a": "Yes."
+      },
+      {
+        "q": "Map navigation?",
+        "a": "Yes, OpenStreetMap."
+      },
+      {
+        "q": "All free?",
+        "a": "Yes, completely free."
+      },
+      {
+        "q": "Medical diagnosis?",
+        "a": "본 플랫폼은 의료 진단 서비스가 아닌 간병·통역·기록·전달 보조 플랫폼입니다. 치료 판단은 의료진 확인이 필요합니다."
+      }
+    ]
+  },
+  "home": {
+    "heroTitle": "Plateforme mondiale de traduction pour soignants",
+    "heroDesc": "Connecter patients, aidants, soignants et personnel médical.",
+    "feature1Title": "Real-time Translation",
+    "feature1Desc": "19 languages bidirectional",
+    "feature2Title": "Care Log",
+    "feature2Desc": "Voice to text & share",
+    "feature3Title": "Photo Analysis",
+    "feature3Desc": "OCR text extraction",
+    "feature4Title": "Communauté",
+    "feature4Desc": "Free job board",
+    "statsTitle": "Stats",
+    "stat1": "Languages",
+    "stat2": "Caregivers",
+    "stat3": "Translations",
+    "stat4": "Satisfaction",
+    "notice": "Notice",
+    "quickMenu": "Quick Menu",
+    "latestPosts": "Latest Posts"
+  },
+  "map": {
+    "title": "Map",
+    "placeholder": "Enter address",
+    "search": "Search",
+    "openMap": "Open Map",
+    "noLocation": "No location"
+  },
+  "errors": {
+    "required": "Required",
+    "uploadFail": "Upload failed",
+    "networkError": "Network error",
+    "micPermission": "Mic permission needed",
+    "cameraPermission": "Camera permission needed",
+    "fileTooLarge": "File too large",
+    "unsupportedFormat": "Unsupported format"
+  }
+}
